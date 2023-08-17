@@ -52,31 +52,31 @@ Callback = NotificationBindable
 
 local Tab1 = Window:MakeTab({
 Name = "Home",
-Icon = "rbxassetid://4483345998",
+Icon = "rbxassetid://12388249627",
 PremiumOnly = false
 })
 
 local Tab2 = Window:MakeTab({
 Name = "Scripts",
-Icon = "rbxassetid://4483345998",
+Icon = "rbxassetid://3019710370",
 PremiumOnly = false
 })
 
 local Tab3 = Window:MakeTab({
 Name = "Guis/hubs",
-Icon = "rbxassetid://4483345998",
+Icon = "rbxassetid://3019710370",
 PremiumOnly = false
 })
 
 local Tab4 = Window:MakeTab({
 Name = "Player",
-Icon = "rbxassetid://4483345998",
+Icon = "rbxassetid://11896744496",
 PremiumOnly = false
 })
 
 local Tab5 = Window:MakeTab({
 Name = "Credits",
-Icon = "rbxassetid://4483345998",
+Icon = "rbxassetid://3313689280",
 PremiumOnly = false
 })
 -- Paragraph
