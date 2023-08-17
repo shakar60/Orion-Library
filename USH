@@ -86,12 +86,112 @@ PremiumOnly = false
 })
 -- Paragraph
 ------------------------------------------------------------------
+
 Tab1:AddParagraph("TEAM USH","Was Kavo Ui Switched to Orion Libary")
 Tab1:AddParagraph("Join Discord For More Info","Or Dm shakar60")
 Tab1:AddParagraph("Created By shakar60 On Discord","Shakar's Discord")
 Tab1:AddParagraph("Helped By karvine On Discord","karvine's Discord")
 Tab1:AddParagraph("https://discord.gg/DraFmeP4","Discord Server")
+
 ------------------------------------------------------------------
+--Sliders And Text Boxes
+
+Tab4:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WalkSpeed",
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddSlider({
+	Name = "JumpPower",
+	Min = 50,
+	Max = 500,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddSlider({
+	Name = "FOV",
+	Min = 0,
+	Max = 120,
+	Default = 70,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "FOV",
+	Callback = function(Value)
+      workspace.CurrentCamera.FieldOfView = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddSlider({
+	Name = "Gravity",
+	Min = 0,
+	Max = 500,
+	Default = 196,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Gravity",
+	Callback = function(Value)
+      workspace.Gravity = Value
+		print(Value)
+	end    
+})
+
+Tab4:AddTextbox({
+	Name = "Set WalkSpeed",
+	Default = "Click Here To Set WalkSpeed",
+	TextDisappear = true,
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+		print(Value)
+	end	  
+})
+
+Tab4:AddTextbox({
+	Name = "Set JumpPower",
+	Default = "Click Here To Set JumpPower",
+	TextDisappear = true,
+	Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+		print(Value)
+	end	  
+})
+
+Tab4:AddTextbox({
+	Name = "Set FOV",
+	Default = "Click Here To Set FOV",
+	TextDisappear = true,
+	Callback = function(Value)
+      workspace.CurrentCamera.FieldOfView = Value
+		print(Value)
+	end	  
+})
+
+Tab4:AddTextbox({
+	Name = "Set Gravity",
+	Default = "Click Here To Set Gravity",
+	TextDisappear = true,
+	Callback = function(Value)
+      workspace.Gravity = Value
+		print(Value)
+	end	  
+})
+
 --Button & Scripts
 
 local Tab2Section = Tab2:AddSection({
@@ -189,5 +289,4 @@ loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
 print("Script Executed")
 end 
 })
-
 OrionLib:Init()
