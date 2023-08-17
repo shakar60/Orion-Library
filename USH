@@ -1,0 +1,72 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "USH -- Universal Shakar's Hub", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "shakar"})
+
+local NotificationBindable = Instance.new("BindableFunction")
+
+function NotificationBindable.OnInvoke(buttonPressed)
+    if buttonPressed == "Yeah" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua"))()
+    elseif buttonPressed == "Nah im good" then
+        -- Do something when the Nah im good button is pressed
+    end
+end
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Do You Want Anti Ban Script?",
+    Text = "Loads Anti Ban Script",
+    Button1 = "Yeah",
+    Button2 = "Nah im good",
+    Callback = NotificationBindable
+})
+
+-- Tabs 
+
+local Tab1 = Window:MakeTab({
+    Name = "Home",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+    Name = "Scripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Tab3 = Window:MakeTab({
+    Name = "Guis/hubs",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Tab4 = Window:MakeTab({
+    Name = "Player",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+local Tab5 = Window:MakeTab({
+    Name = "Credits",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab1:AddParagraph("TEAM USH","Switched to Orion Libary")
+
+Tab2:AddButton({
+    Name = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+              print("button pressed")
+      end    
+})
+
+
+
+-- More notifications
+local Tab1Section = Tab1:AddSection({
+    Name = "Welcome"
+})
+
+Tab1Section:NewLabel("Welcome",game.Players.LocalPlayer.Name,"To USH — Universal Shakars HUB!")
