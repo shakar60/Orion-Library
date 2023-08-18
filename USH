@@ -1541,19 +1541,4 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Lo
 print("Script Executed")
 end 
 })
-
-
-
-
 OrionLib:Init()
---[[local TabTestSection = TabTest:AddSection({
-Name = "Test"
-})
-
-TabTest:AddButton({
-Name = "Test",
-Callback = function()
-Test
-print("Script Executed")
-end 
-})]
