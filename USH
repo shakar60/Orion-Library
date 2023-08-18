@@ -61,7 +61,7 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local Tab4 = Window:MakeTab({
+local TabPlayer = Window:MakeTab({
 Name = "Player",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -79,7 +79,7 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local Tab5 = Window:MakeTab({
+local TabAdmin = Window:MakeTab({
 Name = "Admin Cmds",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -97,7 +97,7 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local TabT = Window:MakeTab({
+local TabK = Window:MakeTab({
 Name = "KeyStrokes",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -129,11 +129,11 @@ TabCredits:AddParagraph("Credits To karvine On Discord For Helping Me Make This 
   
 --Sliders And Text Boxes
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "WalkSpeed"
 })
 
-Tab4:AddSlider({
+TabPlayer:AddSlider({
 Name = "Walkspeed",
 Min = 16,
 Max = 500,
@@ -147,11 +147,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "JumpPower"
 })
 
-Tab4:AddSlider({
+TabPlayer:AddSlider({
 Name = "JumpPower",
 Min = 50,
 Max = 500,
@@ -165,11 +165,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayeeSection = TabPlayer:AddSection({
 Name = "FOV"
 })
 
-Tab4:AddSlider({
+TabPlayer:AddSlider({
 Name = "FOV",
 Min = 0,
 Max = 120,
@@ -183,11 +183,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "Gravity"
 })
 
-Tab4:AddSlider({
+TabPlayer:AddSlider({
 Name = "Gravity",
 Min = 0,
 Max = 500,
@@ -201,11 +201,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "Set WalkSpeed"
 })
 
-Tab4:AddTextbox({
+TabPlayer:AddTextbox({
 Name = "Set WalkSpeed",
 Default = "Click Here To Set WalkSpeed",
 TextDisappear = true,
@@ -215,11 +215,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "Set JumpPower"
 })
 
-Tab4:AddTextbox({
+TabPlayer:AddTextbox({
 Name = "Set JumpPower",
 Default = "Click Here To Set JumpPower",
 TextDisappear = true,
@@ -229,11 +229,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "Set FOV"
 })
 
-Tab4:AddTextbox({
+TabPlayer:AddTextbox({
 Name = "Set FOV",
 Default = "Click Here To Set FOV",
 TextDisappear = true,
@@ -243,11 +243,11 @@ print(Value)
 end 
 })
 
-local Tab4Section = Tab4:AddSection({
+local TabPlayerSection = TabPlayer:AddSection({
 Name = "Set Gravity"
 })
 
-Tab4:AddTextbox({
+TabPlayer:AddTextbox({
 Name = "Set Gravity",
 Default = "Click Here To Set Gravity",
 TextDisappear = true,
@@ -259,11 +259,11 @@ end
 
 --Button & Scripts
 
-local Tab5Section = Tab5:AddSection({
+local TabAdminSection = TabAdmin:AddSection({
 Name = "Infinite Yield"
 })
 
-Tab5:AddButton({
+TabAdmin:AddButton({
 Name = "Infinite Yield",
 Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
@@ -717,11 +717,11 @@ print("Script Executed")
 end 
 })
 
-local Tab5Section = Tab5:AddSection({
+local TabAdminSection = TabAdmin:AddSection({
 Name = "Legs Admin Cmd"
 })
 
-Tab5:AddButton({
+TabAdmin:AddButton({
 Name = "Legs Admin Cmd",
 Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
@@ -833,11 +833,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabTools:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "Q Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "Q Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Q/main/Tool",true))()
@@ -845,11 +845,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "G Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "G Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/G./main/Tool",true))()
@@ -857,11 +857,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "C Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "C Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/C/main/Tool",true))()
@@ -869,11 +869,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "M Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "M Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/M/main/Tool",true))()
@@ -881,11 +881,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "N Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "N Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/N/main/Tool",true))()
@@ -893,11 +893,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "F Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "F Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/F/main/Tool",true))()
@@ -905,11 +905,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "X Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "X Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/X/main/Tool",true))()
@@ -917,11 +917,11 @@ print("Script Executed")
 end 
 })
 
-local TabTSection = TabT:AddSection({
+local TabKSection = TabK:AddSection({
 Name = "Z Tool"
 })
 
-TabT:AddButton({
+TabK:AddButton({
 Name = "Z Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Z/main/Tool",true))()
