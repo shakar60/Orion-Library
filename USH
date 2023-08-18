@@ -1216,7 +1216,7 @@ local Tab3Section = Tab3:AddSection({
 Name = "Mm2 Script Guis"
 })
 
-Tab :AddButton({
+Tab3:AddButton({
 Name = "Vynixu's mm2 Gui",
 Callback = function()
 loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
