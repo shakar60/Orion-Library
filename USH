@@ -91,8 +91,20 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local TabDH = Window:MakeTab({
+Name = "DH Hubs + More Here",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local TabBF = Window:MakeTab({
 Name = "Blox Fruits Scripts",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local TabHitbox = Window:MakeTab({
+Name = "Hitbox Expander",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
@@ -1020,11 +1032,11 @@ print("Script Executed")
 end 
 })
 
-local Tab6Section = Tab6:AddSection({
+local TabDHSection = TabDH:AddSection({
 Name = "Fake Macro"
 })
 
-Tab6:AddButton({
+TabDH:AddButton({
 Name = "Fake Macro",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Macro/main/M.N.C",true))()
@@ -1104,11 +1116,11 @@ print("Script Executed")
 end 
 })
 
-local Tab3Section = Tab3:AddSection({
+local TabDHSection = TabDH:AddSection({
 Name = "Beamed Ware Hub"
 })
 
-Tab3:AddButton({
+TabDH:AddButton({
 Name = "Beamed Ware",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RYZZCHIPSX/ryzzchips/main/beamed%20ware%20script"))();
@@ -1164,6 +1176,373 @@ print("Script Executed")
 end 
 })
 
+local Tab2Section = Tab2:AddSection({
+Name = "Pop It Trading Gui"
+})
+
+Tab2:AddButton({
+Name = "Pop It Trading Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sponge123456789/Sponge/main/The%20cool%20Script"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Jnhh Tool Giver Gui"
+})
+
+Tab3:AddButton({
+Name = "Jnhh Tool Giver",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/4yGehrgh'))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Universal Spy"
+})
+
+Tab2:AddButton({
+Name = "Universal Spy",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Mm2 Script Guis"
+})
+
+Tab :AddButton({
+Name = "Vynixu's mm2 Gui",
+Callback = function()
+loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+print("Script Executed")
+end 
+})
+
+Tab3:AddButton({
+Name = "Mm2 Admin Panel",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Cw Nova Hub"
+})
+
+Tab3:AddButton({
+Name = "Nova Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NOVA_HUB_SOURCE"))()
+print("Script Executed")
+end 
+})
+
+local TabHitboxSection = TabHitbox:AddSection({
+Name = "Hitbox Expanders"
+})
+
+TabHitbox:AddButton({
+Name = "Hitbox Expander V1",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/hit/main/box",true))()
+print("Script Executed")
+end 
+})
+
+
+TabHitbox:AddButton({
+Name = "Hitbox Expander V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+print("Script Executed")
+end 
+})
+
+
+TabHitbox:AddButton({
+Name = "Hitbox Expander V3",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/JgtddWA3'))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "ApeiroPhobia Script"
+})
+
+Tab6:AddButton({
+Name = "ApeiroPhobia Scripr",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/apeirophobia/main/script",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Ability Wars Gui [ Key: 4M70sudE2YtN58A9 ]"
+})
+
+Tab3:AddButton({
+Name = "Ability Wars Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VxleLUA/Dynamic-Offical/main/System/GameChecker.lua"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Freeze Script"
+})
+
+Tab2:AddButton({
+Name = "Fe Freeze Script",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/creepstu/fuzzy-octo-giggle/main/Source'))()
+print("Script Executed")
+end 
+})
+
+local TabAdminSection = TabAdmin:AddSection({
+Name = "Nameless Admin Cmd"
+})
+
+TabAdmin:AddButton({
+Name = "Nameless Admin Cmd",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+print("Script Executed")
+end 
+})
+
+TabAdmin:AddButton({
+Name = "Fates Admin Cmd",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+print("Script Executed")
+end 
+})
+
+TabAdmin:AddButton({
+Name = "Revis Admin Cmd",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Caniwq2N",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Fe Throw Gui"
+})
+
+Tab3:AddButton({
+Name = "Fe Throw Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Gd"))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "99% Fail Impossible Obby Script"
+})
+
+Tab6:AddButton({
+Name = "99% Fail Impossible Obby Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/99-fail-impossible-obby/main/ok",true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Flash Lock"
+})
+
+TabAL:AddButton({
+Name = "Flash Lock",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GXma0NrL",true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Orange Box Lock"
+})
+
+TabAL:AddButton({
+Name = "Orange Box Lock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/SubtoRyzzchips/6942334039b725b3ea380aaa7959949f938c2dc9/obf_swVYM0h5h3Rk75C9yprMgKc2ER64968pH0zAy2E30o3H3smBe01xnvZNwrm6oDYo.lua.txt", true))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "Speed Tool"
+})
+
+TabDH:AddButton({
+Name = "Speed Tool",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EX6qHypK", true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "BH"
+})
+
+Tab3:AddButton({
+Name = "British Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RedCoat8102/Britishhub/main/Protected_2739214986728285.lua.txt"))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "Swag Mode"
+})
+
+TabDH:AddButton({
+Name = "Swag Mode",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = " Rage AimLock"
+})
+
+TabAL:AddButton({
+Name = "Rage AimLock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/SubtoRyzzchips/main/Sub%20to%20Ryzzchips%20for%20more%20New%20aimlock%20script!"))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "RayCode X"
+})
+
+TabDH:AddButton({
+Name = "RayCode X",
+Callback = function()
+loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "Kirbs Ware Anti Lock"
+})
+
+TabDH:AddButton({
+Name = "Kirbs Ware Anti Lock",
+Callback = function()
+loadstring(game:HttpGet('https://github.com/Kirbsware/script/raw/main/Mobile'))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Keybind Maker"
+})
+
+Tab6:AddButton({
+Name = "Keybind Maker",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/Ujm4HWxh/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "NukerMode"
+})
+
+TabDH:AddButton({
+Name = "NukerMode",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Tenaki Camlock"
+})
+
+TabAL:AddButton({
+Name = "Tenaki Camlock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Tenkai./main/imean.Tenaki",true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "KeyStrokes Script"
+})
+
+Tab6:AddButton({
+Name = "KeyStrokes Script",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/Te4dwSw2/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "KeyBind Maker Script"
+})
+
+Tab6:AddButton({
+Name = "KeyBind Maker Script",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/Ujm4HWxh/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "Faded Hub"
+})
+
+TabDH:AddButton({
+Name = "Faded Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "Pluto Hub"
+})
+
+TabDH:AddButton({
+Name = "Pluto Hub",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()
+print("Script Executed")
+end 
+})
+
+
 
 
 OrionLib:Init()
@@ -1177,4 +1556,4 @@ Callback = function()
 
 print("Script Executed")
 end 
-})]]
+})]
