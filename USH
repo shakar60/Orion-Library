@@ -14,15 +14,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/w3bh00k/main
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
 local Notify = AkaliNotif.Notify;
 Notify({
-Description = "Universal Shakars Hub Loaded";
-Title = "USH Loaded";
+Description = "⭐️ Universal Shakars Hub Loaded ⭐️";
+Title = "⭐️ USH Loaded ⭐️";
 Duration = 5;
 });
 ------------------------------------------------------------------
 --2nd Notify
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "USH Loaded"; 
+Title = "⭐️ USH Loaded ⭐️"; 
 Text = "Made by shakar#6955 Helped By karvine"; 
 Duration = 5; 
 })
@@ -61,8 +61,14 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local Tab4 = Window:MakeTab({
+Name = "Player",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local Tab2 = Window:MakeTab({
-Name = "Scripts",
+Name = "Main Scripts",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
@@ -73,13 +79,25 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local Tab4 = Window:MakeTab({
-Name = "Player",
+local Tab5 = Window:MakeTab({
+Name = "Admin Cmds",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local Tab5 = Window:MakeTab({
+local Tab6 = Window:MakeTab({
+Name = "Other Scripts",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local Tab7 = Window:MakeTab({
+Name = "KeyStrokes",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
+local TabCredits = Window:MakeTab({
 Name = "Credits",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -92,113 +110,154 @@ Tab1:AddParagraph("Join Discord For More Info","Or Dm shakar60")
 Tab1:AddParagraph("Created By shakar60 On Discord","Shakar's Discord")
 Tab1:AddParagraph("Helped By karvine On Discord","karvine's Discord")
 Tab1:AddParagraph("https://discord.gg/DraFmeP4","Discord Server")
-
+Tab1:AddParagraph("The Used Ui Library is Orion Ui Library","Ui Library")
 ------------------------------------------------------------------
+--Credits
+
+TabCredits:AddParagraph("Credits To Everyone Who Make Scripts","Credits")
+TabCredits:AddParagraph("Credits To Everyone Who Showcase My Script Hub","Credits")
+TabCredits:AddParagraph("Credits To shakar60 On Discord For Making This Hub","Credits")
+TabCredits:AddParagraph("Credits To karvine On Discord For Helping Me Make This Hub","Credits")
+  
+------------------------------------------------------------------
+  
 --Sliders And Text Boxes
 
-Tab4:AddSlider({
-	Name = "Walkspeed",
-	Min = 16,
-	Max = 500,
-	Default = 16,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "WalkSpeed",
-	Callback = function(Value)
-      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-		print(Value)
-	end    
+local Tab4Section = Tab4:AddSection({
+Name = "WalkSpeed"
 })
 
 Tab4:AddSlider({
-	Name = "JumpPower",
-	Min = 50,
-	Max = 500,
-	Default = 50,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "JumpPower",
-	Callback = function(Value)
-      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-		print(Value)
-	end    
+Name = "Walkspeed",
+Min = 16,
+Max = 500,
+Default = 16,
+Color = Color3.fromRGB(255,255,255),
+Increment = 1,
+ValueName = "WalkSpeed",
+Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "JumpPower"
 })
 
 Tab4:AddSlider({
-	Name = "FOV",
-	Min = 0,
-	Max = 120,
-	Default = 70,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "FOV",
-	Callback = function(Value)
-      workspace.CurrentCamera.FieldOfView = Value
-		print(Value)
-	end    
+Name = "JumpPower",
+Min = 50,
+Max = 500,
+Default = 50,
+Color = Color3.fromRGB(255,255,255),
+Increment = 1,
+ValueName = "JumpPower",
+Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "FOV"
 })
 
 Tab4:AddSlider({
-	Name = "Gravity",
-	Min = 0,
-	Max = 500,
-	Default = 196,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Gravity",
-	Callback = function(Value)
-      workspace.Gravity = Value
-		print(Value)
-	end    
+Name = "FOV",
+Min = 0,
+Max = 120,
+Default = 70,
+Color = Color3.fromRGB(255,255,255),
+Increment = 1,
+ValueName = "FOV",
+Callback = function(Value)
+workspace.CurrentCamera.FieldOfView = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "Gravity"
+})
+
+Tab4:AddSlider({
+Name = "Gravity",
+Min = 0,
+Max = 500,
+Default = 196,
+Color = Color3.fromRGB(255,255,255),
+Increment = 1,
+ValueName = "Gravity",
+Callback = function(Value)
+workspace.Gravity = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "Set WalkSpeed"
 })
 
 Tab4:AddTextbox({
-	Name = "Set WalkSpeed",
-	Default = "Click Here To Set WalkSpeed",
-	TextDisappear = true,
-	Callback = function(Value)
-      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-		print(Value)
-	end	  
+Name = "Set WalkSpeed",
+Default = "Click Here To Set WalkSpeed",
+TextDisappear = true,
+Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "Set JumpPower"
 })
 
 Tab4:AddTextbox({
-	Name = "Set JumpPower",
-	Default = "Click Here To Set JumpPower",
-	TextDisappear = true,
-	Callback = function(Value)
-      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-		print(Value)
-	end	  
+Name = "Set JumpPower",
+Default = "Click Here To Set JumpPower",
+TextDisappear = true,
+Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "Set FOV"
 })
 
 Tab4:AddTextbox({
-	Name = "Set FOV",
-	Default = "Click Here To Set FOV",
-	TextDisappear = true,
-	Callback = function(Value)
-      workspace.CurrentCamera.FieldOfView = Value
-		print(Value)
-	end	  
+Name = "Set FOV",
+Default = "Click Here To Set FOV",
+TextDisappear = true,
+Callback = function(Value)
+workspace.CurrentCamera.FieldOfView = Value
+print(Value)
+end 
+})
+
+local Tab4Section = Tab4:AddSection({
+Name = "Set Gravity"
 })
 
 Tab4:AddTextbox({
-	Name = "Set Gravity",
-	Default = "Click Here To Set Gravity",
-	TextDisappear = true,
-	Callback = function(Value)
-      workspace.Gravity = Value
-		print(Value)
-	end	  
+Name = "Set Gravity",
+Default = "Click Here To Set Gravity",
+TextDisappear = true,
+Callback = function(Value)
+workspace.Gravity = Value
+print(Value)
+end 
 })
 
 --Button & Scripts
 
-local Tab2Section = Tab2:AddSection({
-    Name = "Infinite Yield"
+local Tab5Section = Tab5:AddSection({
+Name = "Infinite Yield"
 })
 
-Tab2:AddButton({
+Tab5:AddButton({
 Name = "Infinite Yield",
 Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
@@ -207,19 +266,57 @@ end
 })
 
 local Tab2Section = Tab2:AddSection({
-    Name = "Fling Switch"
+Name = "Anti Fling & Fling Scripts"
 })
 
 Tab2:AddButton({
-Name = "Fling Switch",
+Name = "Anti Fling V1",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/anti.-./main/fling",true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Anti Fling V2",
+Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/GxdesRQx'),true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Click Fling",
 Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_4Q10q272NIQc093Os32uBi29U9PWkU0d3Tr1Uh4k92vus2u10786Z0jep5uhqE2N.lua.txt'),true))()
 print("Script Executed")
 end 
 })
 
+Tab2:AddButton({
+Name = "Touch Fling",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Fling Gui",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+end 
+})
+
+Tab2:AddButton({
+Name = "Toggle Fling",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+end 
+})
+
 local Tab2Section = Tab2:AddSection({
-    Name = "Fake Lag"
+Name = "Fake Lag & Switch Lag"
 })
 
 Tab2:AddButton({
@@ -227,26 +324,50 @@ Name = "Fake Lag",
 Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
 print("Script Executed")
-end 
-})
-
-local Tab2Section = Tab2:AddSection({
-    Name = "Keyboard Script"
+end --loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))()
 })
 
 Tab2:AddButton({
-Name = "Keyboard Script",
+Name = "Switch Lag",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))()
+print("Script Executed")
+end
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Keyboard Scripts"
+})
+
+Tab6:AddButton({
+Name = "Keyboard Script V1",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 print("Script Executed")
 end 
 })
 
-local Tab2Section = Tab2:AddSection({
-    Name = "Vhub"
+Tab6:AddButton({
+Name = "Keyboard Script V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
+print("Script Executed")
+end 
 })
 
-Tab2:AddButton({
+Tab6:AddButton({
+Name = "Keyboard Script V3",
+Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Vhub"
+})
+
+Tab3:AddButton({
 Name = "Vhub",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/2642/Created/VHub"))()
@@ -254,11 +375,11 @@ print("Script Executed")
 end 
 })
 
-local Tab2Section = Tab2:AddSection({
-    Name = "Unfair Hub"
+local Tab3Section = Tab3:AddSection({
+Name = "Unfair Hub"
 })
 
-Tab2:AddButton({
+Tab3:AddButton({
 Name = "Unfair hub",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
@@ -267,7 +388,7 @@ end
 })
 
 local Tab2Section = Tab2:AddSection({
-    Name = "Rizz Script"
+Name = "Rizz Script"
 })
 
 Tab2:AddButton({
@@ -279,7 +400,7 @@ end
 })
 
 local Tab2Section = Tab2:AddSection({
-    Name = "PackGod Script"
+Name = "PackGod Script"
 })
 
 Tab2:AddButton({
@@ -289,4 +410,231 @@ loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
 print("Script Executed")
 end 
 })
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fly Scripts"
+})
+
+Tab2:AddButton({
+Name = "Fly V1",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro69Yes/sussy-Script/main/SecuredFlyGuiv3.lua'))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Fly V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Flexzstr/FlyScript/main/Beta"))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Fly V3",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/gJfKgLra"))();
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Rejoin & Direct Rejoin"
+})
+
+Tab2:AddButton({
+Name = "Rejoin Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua", true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Direct Rejoin Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Direct/main/Rejoin",true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Server Finder Script"
+})
+
+Tab2:AddButton({
+Name = "Server Finder",
+Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Server-Browser_80",true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Tp Walk V3"
+})
+
+Tab6:AddButton({
+Name = "Tp Walk V3",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TherealXORA/Roblox-Scripts/main/TpwalkV3"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Inf Jumps Gui"
+})
+
+Tab2:AddButton({
+Name = "Inf Jumps Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/oksinfjump/main/workssssss",true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Script Hub V2"
+})
+
+Tab2:AddButton({
+Name = "Script Hub V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV2/main/SCRIPTHUBV2", true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Kat Aimbot Script Gui"
+})
+
+Tab3:AddButton({
+Name = "Kat AimBot Script Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Strong Man Simulator Script"
+})
+
+Tab2:AddButton({
+Name = "Strong Man Simulator Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Flash Back Script"
+})
+
+Tab2:AddButton({
+Name = "Flash Back Script",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/cgWLwdN9", true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Invisible Script V1"
+})
+
+Tab2:AddButton({
+Name = "Invisible Script V1",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/AYtzGEPb'))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Invisible Script V2",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Chiezzy Hub"
+})
+
+Tab3:AddButton({
+Name = "Chiezzy Hub",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Race Car Hub"
+})
+
+Tab3:AddButton({
+Name = "Race Car Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukezz/Fe-Scripts/main/Fe%20Racecar"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "VcskV Hub"
+})
+
+Tab3:AddButton({
+Name = "VcskV Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/VcskV/main/Hub/main.lua", true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Babft Script Hubs"
+})
+
+Tab3:AddButton({
+Name = "Babft Exe",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/XRoLLu/UWU/main/BUILD%20A%20BOAT%20FOR%20TREASURE.lua'))()
+print("Script Executed")
+end 
+})
+
+Tab3:AddButton({
+Name = "Asta Hub",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0YezNNRh",true))()
+print("Script Executed")
+end 
+})
+
+Tab3:AddButton({
+Name = "Boat Blitz",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/boat-blitz/main/script",true))()
+print("Script Executed")
+end 
+})
 OrionLib:Init()
+--[[local Tab Section = Tab :AddSection({
+Name = " "
+})
+
+Tab :AddButton({
+Name = " ",
+Callback = function()
+
+print("Script Executed")
+end 
+})]]
