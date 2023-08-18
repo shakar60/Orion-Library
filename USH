@@ -85,7 +85,7 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local Tab8 = Window:MakeTab({
+local TabAL = Window:MakeTab({
 Name = "AimLock/Lock",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -657,11 +657,11 @@ print("Script Executed")
 end 
 })
 
-local Tab8Section = Tab8:AddSection({
+local TabALSection = TabAL:AddSection({
 Name = "Aim Viewer"
 })
 
-Tab8:AddButton({
+TabAL:AddButton({
 Name = "Aim Viewer",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/VinGUI"))()
@@ -669,11 +669,11 @@ print("Script Executed")
 end 
 })
 
-local Tab8Section = Tab8:AddSection({
+local TabALSection = TabAL:AddSection({
 Name = "Kals Private Lock"
 })
 
-Tab8:AddButton({
+TabAL:AddButton({
 Name = "Kals Private Lock",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/j08xM9mW", true))()
@@ -925,6 +925,79 @@ TabK:AddButton({
 Name = "Z Tool",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Z/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "RyzzChips Lock"
+})
+
+TabAL:AddButton({
+Name = "RyzzChips Lock",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/j08xM9mW", true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Player Specetor"
+})
+
+Tab6:AddButton({
+Name = "Player Specetor",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/wyvdb7gr'))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "TP Scripts"
+})
+
+Tab6:AddButton({
+Name = "TP Players",
+Callback = function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
+print("Script Executed")
+end 
+})
+
+Tab6:AddButton({
+Name = "Tween TP",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_gtQG8WW70awuM1u2O6I8Z3j007xzGnfC0vw6D6Tzj226R20KPLyKZR8MbK5V57mu.lua.txt'),true))()
+print("Script Executed")
+end 
+})
+
+Tab6:AddButton({
+Name = "Click To TP",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/ClickToTp/main/Script",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "No Clip Guis"
+})
+
+Tab3:AddButton({
+Name = "No Clip Gui V1",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/pKV2Ys4E"))()
+print("Script Executed")
+end 
+})
+
+
+Tab3:AddButton({
+Name = "No Clip Gui V2",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
 print("Script Executed")
 end 
 })
