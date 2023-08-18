@@ -1546,14 +1546,14 @@ end
 
 
 OrionLib:Init()
---[[local Tab Section = Tab :AddSection({
-Name = " "
+--[[local TabTestSection = TabTest:AddSection({
+Name = "Test"
 })
 
-Tab :AddButton({
-Name = " ",
+TabTest:AddButton({
+Name = "Test",
 Callback = function()
-
+Test
 print("Script Executed")
 end 
 })]
