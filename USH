@@ -29,7 +29,7 @@ Duration = 5;
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Join discord"; 
-Text = "https://discord.gg/g86HSsjt"; 
+Text = "https://discord.gg/FM6ffNz7"; 
 Duration = 10; 
 })
 ------------------------------------------------------------------
@@ -55,7 +55,7 @@ Callback = NotificationBindable
 ------------------------------------------------------------------
 -- Tabs 
 
-local Tab1 = Window:MakeTab({
+local TabHome = Window:MakeTab({
 Name = "Home",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -85,13 +85,19 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local Tab8 = Window:MakeTab({
+Name = "AimLock/Lock",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local Tab6 = Window:MakeTab({
 Name = "Other Scripts",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
-local Tab7 = Window:MakeTab({
+local TabT = Window:MakeTab({
 Name = "KeyStrokes",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
@@ -105,12 +111,12 @@ PremiumOnly = false
 -- Paragraph
 ------------------------------------------------------------------
 
-Tab1:AddParagraph("TEAM USH","Was Kavo Ui Switched to Orion Libary")
-Tab1:AddParagraph("Join Discord For More Info","Or Dm shakar60")
-Tab1:AddParagraph("Created By shakar60 On Discord","Shakar's Discord")
-Tab1:AddParagraph("Helped By karvine On Discord","karvine's Discord")
-Tab1:AddParagraph("https://discord.gg/DraFmeP4","Discord Server")
-Tab1:AddParagraph("The Used Ui Library is Orion Ui Library","Ui Library")
+TabHome:AddParagraph("TEAM USH","Was Kavo Ui Switched to Orion Libary")
+TabHome:AddParagraph("Join Discord For More Info","Or Dm shakar60")
+TabHome:AddParagraph("Created By shakar60 On Discord","Shakar's Discord")
+TabHome:AddParagraph("Helped By karvine On Discord","karvine's Discord")
+TabHome:AddParagraph("https://discord.gg/FM6ffNz7","Discord Server")
+TabHome:AddParagraph("The Used Ui Library is Orion Ui Library","Ui Library")
 ------------------------------------------------------------------
 --Credits
 
@@ -399,11 +405,11 @@ print("Script Executed")
 end 
 })
 
-local Tab2Section = Tab2:AddSection({
+local Tab6Section = Tab6:AddSection({
 Name = "PackGod Script"
 })
 
-Tab2:AddButton({
+Tab6:AddButton({
 Name = "PackGod Script",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
@@ -626,6 +632,307 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/boat-blitz/m
 print("Script Executed")
 end 
 })
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Save Position"
+})
+
+Tab2:AddButton({
+Name = "Fe Save Position",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Free Dances"
+})
+
+Tab2:AddButton({
+Name = "Fe Free Dances",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+print("Script Executed")
+end 
+})
+
+local Tab8Section = Tab8:AddSection({
+Name = "Aim Viewer"
+})
+
+Tab8:AddButton({
+Name = "Aim Viewer",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/VinGUI"))()
+print("Script Executed")
+end 
+})
+
+local Tab8Section = Tab8:AddSection({
+Name = "Kals Private Lock"
+})
+
+Tab8:AddButton({
+Name = "Kals Private Lock",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/j08xM9mW", true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Chat Mimic"
+})
+
+Tab2:AddButton({
+Name = "Fe Chat Mimic",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./8fb5ed20fb168d1ae3044ede45b90f67e3fb37a2/file'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Fe Parkour"
+})
+
+Tab6:AddButton({
+Name = "Fe Parkour",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.ga/6HAb8rAj/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Info Gui Script"
+})
+
+Tab3:AddButton({
+Name = "Info Gui Script",
+Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/5seCbYFa'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab5Section = Tab5:AddSection({
+Name = "Legs Admin Cmd"
+})
+
+Tab5:AddButton({
+Name = "Legs Admin Cmd",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Animation Changer"
+})
+
+Tab6:AddButton({
+Name = "Animation Changer",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarWareOP/Animation-Changer-Source/main/Script", true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Ragdoll Engine Script Hubs"
+})
+
+Tab3:AddButton({
+Name = "Mystery Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/i4mitty/MysteryHub/main/MysteryHub%20-%20Ragdoll%20Engine.lua"))()
+print("Script Executed")
+end 
+})
+
+Tab3:AddButton({
+Name = "Malware Hub",
+Callback = function()
+loadstring(game:HttpGet('https://gist.githubusercontent.com/H20CalibreYT/462f6e6236a9371130f113def6549bb1/raw/'))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Air Swim"
+})
+
+Tab6:AddButton({
+Name = "Air Swim",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9CK0qSgn"))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Chat Executor"
+})
+
+Tab6:AddButton({
+Name = "Chat Executor",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Bido Skins Hub"
+})
+
+Tab3:AddButton({
+Name = "Bido Skins Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20Skins%20V1.7"))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Fe Bird"
+})
+
+Tab6:AddButton({
+Name = "Fe Bird",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Fe%20Bird%20R6%20and%20R15'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Games Hub Destroyer V4"
+})
+
+Tab3:AddButton({
+Name = "Games Hub Destroyer V4",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-HUB-Destroyer-V4/main/Games%20HUB%20Destroyer%20V4"))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Vehicle Legends Scripr"
+})
+
+Tab6:AddButton({
+Name = "Vehicle Legends Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IExpIoit/Script/main/UltimateHub"))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabTools:AddSection({
+Name = "Q Tool"
+})
+
+TabT:AddButton({
+Name = "Q Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Q/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "G Tool"
+})
+
+TabT:AddButton({
+Name = "G Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/G./main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "C Tool"
+})
+
+TabT:AddButton({
+Name = "C Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/C/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "M Tool"
+})
+
+TabT:AddButton({
+Name = "M Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/M/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "N Tool"
+})
+
+TabT:AddButton({
+Name = "N Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/N/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "F Tool"
+})
+
+TabT:AddButton({
+Name = "F Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/F/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "X Tool"
+})
+
+TabT:AddButton({
+Name = "X Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/X/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+local TabTSection = TabT:AddSection({
+Name = "Z Tool"
+})
+
+TabT:AddButton({
+Name = "Z Tool",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Z/main/Tool",true))()
+print("Script Executed")
+end 
+})
+
+
+
+
+
 OrionLib:Init()
 --[[local Tab Section = Tab :AddSection({
 Name = " "
