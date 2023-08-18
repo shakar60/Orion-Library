@@ -91,6 +91,12 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local TabBF = Window:MakeTab({
+Name = "Blox Fruits Scripts",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local Tab6 = Window:MakeTab({
 Name = "Other Scripts",
 Icon = "rbxassetid://4483345998",
@@ -1002,9 +1008,89 @@ print("Script Executed")
 end 
 })
 
+local Tab3Section = Tab3:AddSection({
+Name = "Brans Hub"
+})
 
+Tab3:AddButton({
+Name = "Brans Hub",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/8G5wzp3L"))()
+print("Script Executed")
+end 
+})
 
+local Tab6Section = Tab6:AddSection({
+Name = "Fake Macro V1"
+})
 
+Tab6:AddButton({
+Name = "Fake Macro",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Macro/main/M.N.C",true))()
+print("Script Executed")
+end 
+})
+
+local TabBFSection = TabBF:AddSection({
+Name = "BF Chest Farm V1"
+})
+
+TabBF:AddButton({
+Name = "BF Chest Farm V1",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+print("Script Executed")
+end 
+})
+
+local TabBFSection = TabBF:AddSection({
+Name = "BF Chest Farm V2"
+})
+
+TabBF:AddButton({
+Name = "BF Chest Farm V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Chest_onoff"))()
+print("Script Executed")
+end 
+})
+
+local TabBFSection = TabBF:AddSection({
+Name = "BF Hub V1"
+})
+
+TabBF:AddButton({
+Name = "BF Hub V1",
+Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/lxnnydev/1325a6ec942d0bb837bafe0ee25fcc5c/raw/c9ab9f038142427ba1739f099e78bb0b0588fa40/bf_script.lua",true))()
+print("Script Executed")
+end 
+})
+
+local TabBFSection = TabBF:AddSection({
+Name = "BF Hub V2"
+})
+
+TabBF:AddButton({
+Name = "BF Hub V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MkoriCraft/UPDBF2xSwitch/main/Protected%20(3).lua",true))()
+print("Script Executed")
+end 
+})
+
+local TabBFSection = TabBF:AddSection({
+Name = "BF Hub V2"
+})
+
+TabBF:AddButton({
+Name = "BF Uranium Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+print("Script Executed")
+end 
+})
 
 OrionLib:Init()
 --[[local Tab Section = Tab :AddSection({
