@@ -1152,10 +1152,6 @@ print("Script Executed")
 end 
 })
 
-local Tab2Section = Tab2:AddSection({
-Name = " "
-})
-
 Tab2:AddButton({
 Name = "Dino Animations",
 Callback = function()
@@ -1322,12 +1318,20 @@ print("Script Executed")
 end 
 })
 
+local TabAdminSection = TabAdmin:AddSection({
+Name = "Fates Admin Cmd"
+})
+
 TabAdmin:AddButton({
 Name = "Fates Admin Cmd",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 print("Script Executed")
 end 
+})
+
+local TabAdminSection = TabAdmin:AddSection({
+Name = "Rwvis Admin Cmd"
 })
 
 TabAdmin:AddButton({
@@ -1965,7 +1969,7 @@ Name = "Sync TRD Script Gui"
 Tab3:AddButton({
 Name = "Sync TRD Script Gui",
 Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/Roblox%20T.R.D%20Camp%20Script"))();
 print("Script Executed")
 end 
 })
@@ -2077,5 +2081,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/frontlines./
 print("Script Executed")
 end 
 })
-
 OrionLib:Init()
