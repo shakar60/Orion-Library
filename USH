@@ -1541,4 +1541,541 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Lo
 print("Script Executed")
 end 
 })
+
+local Tab6Section = Tab6:AddSection({
+Name = "Rtx & Shader"
+})
+
+Tab6:AddButton({
+Name = "Shader Script",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+print("Script Executed")
+end 
+})
+
+Tab6:AddButton({
+Name = "Rtx Script",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/BIr8OzrR/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Red Dot Lock Script"
+})
+
+Tab6:AddButton({
+Name = "Red Dot Lock Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/reddot1/main/reddot1", true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Chat Bypass"
+})
+
+Tab6:AddButton({
+Name = "Chat Bypass",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Chat/main/Bypass",true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Chat Spammer"
+})
+
+Tab6:AddButton({
+Name = "Chat Spammer",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/chatspammer/main/chatspammer", true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Shift Locks"
+})
+
+Tab2:AddButton({
+Name = "Temporary ShiftLock",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Perm ShiftLock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/PermShiftLock/main/S",true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Chat Hax"
+})
+
+Tab2:AddButton({
+Name = "Chat Hax",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Esclipe Hub"
+})
+
+Tab3:AddButton({
+Name = "Esclipe Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Esclipe-Hub-V-0.95/main/Real",true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Fake Tools V4"
+})
+
+Tab2:AddButton({
+Name = "Fe Fake Tools V4",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Player Orbit"
+})
+
+Tab2:AddButton({
+Name = "Fe Player Orbit",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Orbit%20GUI"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Better Roblox"
+})
+
+Tab2:AddButton({
+Name = "Better Roblox",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/betterrobloxui/main/betterroblox", true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Boombox Scripts"
+})
+
+Tab6:AddButton({
+Name = "DHRP Boombox Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Dollhouse/main/Roleplay",true))()
+print("Script Executed")
+end 
+})
+
+Tab6:AddButton({
+Name = "PineApple Boombox Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/boombox/main/script",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "GigaChad Hub"
+})
+
+Tab3:AddButton({
+Name = "GigaChad Hub",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/OWJBWKQLAISH/GigaChad-Hub/main/Version%20V3.5'))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Player Esp"
+})
+
+Tab2:AddButton({
+Name = "Player Esp V1",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/box.esp/main/s",true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Player Esp V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/name.esp/main/s",true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Player Esp V3",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/charm/main/esp",true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Player Esp V4",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/blue./main/esp",true))()
+print("Script Executed")
+end 
+})
+
+Tab2:AddButton({
+Name = "Player Esp V5",
+Callback = function()
+loadstring(game:HttpGet("https://paste.gg/p/anonymous/7259b0557ebf44ccabf2f7b58dc79899/files/0475cb5d744642a2b572e3a8af205588/raw"))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Ios W Lock"
+})
+
+TabAL:AddButton({
+Name = "Ios W Lock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/iosW/main/Lock",true))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Make Ppl Fly Script"
+})
+
+Tab6:AddButton({
+Name = "Make Ppl Fly Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/fe-make-ppl-fly/main/s",true))()
+print("Script Executed")
+end 
+})
+
+local TabDHSection = TabDH:AddSection({
+Name = "DragonWare AimLock Hub"
+})
+
+TabDH:AddButton({
+Name = "DragonWare AimLock Hub",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ChaseSYNX/Scripts/main/DragonWareAimlock')))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Hacker Chat"
+})
+
+Tab2:AddButton({
+Name = "Fe Hacker Chat",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/hacker./main/chat",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Game Script Hub V3"
+})
+
+Tab3:AddButton({
+Name = "Game Script Hub V3",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Multi Scriper X V2"
+})
+
+Tab3:AddButton({
+Name = "Multi Scripter X V2",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Silent Aim Gui [ Bad ]"
+})
+
+TabAL:AddButton({
+Name = "Silent Aim Gui [ Bad ]",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zuwdaq/legit-slient-aim-script/main/legit",true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Nyula Gui"
+})
+
+TabAL:AddButton({
+Name = "Nyula Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/nyula", true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "i forgor Hub"
+})
+
+Tab3:AddButton({
+Name = "i forgor Hub",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iforgotmodz/Universal-Script-Loader/main/Updated1.3"))()
+print("Script Executed")
+end 
+})
+
+local Tab6Section = Tab6:AddSection({
+Name = "Low Gfx"
+})
+
+Tab6:AddButton({
+Name = "Low Gfx",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zQUqDRdJ",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "White Room Script Gui"
+})
+
+Tab3:AddButton({
+Name = "White Room Script Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NFMS-1/WRUI/main/1", true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "ImperialW Lock"
+})
+
+TabAL:AddButton({
+Name = "ImperialW Lock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/imperialw/main/imperialw",true))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Haalfi-cc Lock"
+})
+
+TabAL:AddButton({
+Name = "Haalfi-cc Lock",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MariyaFurmanova/Library/main/DaHood", true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Player Collision"
+})
+
+Tab2:AddButton({
+Name = "Fe Player Collision",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Collision.txt'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Zombie Scripr"
+})
+
+Tab2:AddButton({
+Name = "Fe Zombie Script",
+Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/w7KnPY70/raw'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Walk On Wall Script"
+})
+
+Tab2:AddButton({
+Name = "Fe Walk On Wall Script",
+Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe Anti Chat Ban"
+})
+
+Tab2:AddButton({
+Name = "Fe Anti Chat Ban",
+Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Wqxzdi1q'))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Sync TRD Script Gui"
+})
+
+Tab3:AddButton({
+Name = "Sync TRD Script Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Prtty Much Evry Bordr Game Vr Script"
+})
+
+Tab3:AddButton({
+Name = "Prtty Much Evry Bordr Game Vr",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/memejames/New/main/Hub'))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Ghost Hub"
+})
+
+Tab3:AddButton({
+Name = "Ghost Hub",
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Ice Hub"
+})
+
+Tab3:AddButton({
+Name = "Ice Hub",
+Callback = function()
+loadstring(game:HttpGet("https://icehub.cf/IceHubLoader"))()
+print("Script Executed")
+end 
+})
+
+local TabALSection = TabAL:AddSection({
+Name = "Silent Aim Script"
+})
+
+TabAL:AddButton({
+Name = "Silent Aim Script",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/silents.aim/main/s",true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "Funky Friday Script Gui"
+})
+
+Tab3:AddButton({
+Name = "Funky Friday Script Guu",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "The Best Strongest Battle Ground Script Gui"
+})
+
+Tab3:AddButton({
+Name = "The Best Strongest Battle Ground Script Gui Key: [ BestTheStrongest5412Roblox ]",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Strongest/main/Battlegrounds77"))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "RoGhoul Script Gui"
+})
+
+Tab3:AddButton({
+Name = "RoGhoul Script Gui",
+Callback = function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+print("Script Executed")
+end 
+})
+
+local Tab2Section = Tab2:AddSection({
+Name = "Fe R15 To R6"
+})
+
+Tab2:AddButton({
+Name = "Fe R15 To R6",
+Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua'),true))()
+print("Script Executed")
+end 
+})
+
+local Tab3Section = Tab3:AddSection({
+Name = "FrontLines Script Gui"
+})
+
+Tab3:AddButton({
+Name = "FrontLines Script Gui",
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/frontlines./main/hitbox",true))()
+print("Script Executed")
+end 
+})
+
 OrionLib:Init()
