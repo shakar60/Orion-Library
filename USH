@@ -29,7 +29,7 @@ Duration = 5;
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Join discord"; 
-Text = "https://discord.gg/FM6ffNz7"; 
+Text = "https://discord.gg/yyb2uQ7a"; 
 Duration = 10; 
 })
 ------------------------------------------------------------------
@@ -126,15 +126,19 @@ Name = "Credits",
 Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
--- Paragraph
-------------------------------------------------------------------
 
+------------------------------------------------------------------
+-- Paragraph
+
+TabCredits:AddParagraph("Please Credit Me When Showcasing Script Hub And Make An Easy Link To Get The Script")
 TabHome:AddParagraph("TEAM USH","Was Kavo Ui Switched to Orion Libary")
 TabHome:AddParagraph("Join Discord For More Info","Or Dm shakar60")
 TabHome:AddParagraph("Created By shakar60 On Discord","Shakar's Discord")
 TabHome:AddParagraph("Helped By karvine On Discord","karvine's Discord")
-TabHome:AddParagraph("https://discord.gg/FM6ffNz7","Discord Server")
+TabHome:AddParagraph("https://discord.gg/yyb2uQ7a","Discord Server")
 TabHome:AddParagraph("The Used Ui Library is Orion Ui Library","Ui Library")
+TabHome:AddParagraph("Use This Version Of USH Old Version Is OutDated And Will Not Be Updated")
+
 ------------------------------------------------------------------
 --Credits
 
@@ -142,9 +146,9 @@ TabCredits:AddParagraph("Credits To Everyone Who Make Scripts","Credits")
 TabCredits:AddParagraph("Credits To Everyone Who Showcase My Script Hub","Credits")
 TabCredits:AddParagraph("Credits To shakar60 On Discord For Making This Hub","Credits")
 TabCredits:AddParagraph("Credits To karvine On Discord For Helping Me Make This Hub","Credits")
-  
+TabCredits:AddParagraph("Please Credit Me When Showcasing Script Hub And Make An Easy Link To Get The Script","Credits")
+
 ------------------------------------------------------------------
-  
 --Sliders And Text Boxes
 
 local TabPlayerSection = TabPlayer:AddSection({
@@ -274,7 +278,7 @@ workspace.Gravity = Value
 print(Value)
 end 
 })
-
+------------------------------------------------------------------
 --Button & Scripts
 
 local TabAdminSection = TabAdmin:AddSection({
@@ -348,7 +352,7 @@ Name = "Fake Lag",
 Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
 print("Script Executed")
-end --loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))()
+end
 })
 
 Tab2:AddButton({
@@ -417,18 +421,6 @@ Name = "Rizz Script"
 
 Tab2:AddButton({
 Name = "Rizz Script",
-Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
-print("Script Executed")
-end 
-})
-
-local Tab6Section = Tab6:AddSection({
-Name = "PackGod Script"
-})
-
-Tab6:AddButton({
-Name = "PackGod Script",
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
 print("Script Executed")
@@ -1152,8 +1144,12 @@ print("Script Executed")
 end 
 })
 
+local Tab2Section = Tab2:AddSection({
+Name = "Dino Animation"
+})
+
 Tab2:AddButton({
-Name = "Dino Animations",
+Name = "Dino Animation",
 Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_K2n31uc6t2wY5A8786eR4K15sgbUF0vdQ80a0LzgvLRkSNYd89H1AS3124gMR6SM.lua.txt'),true))()
 print("Script Executed")
