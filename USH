@@ -1566,7 +1566,7 @@ local TabALSection = TabAL:AddSection({
 Name = "Red Dot Lock Script"
 })
 
-Tab6:AddButton({
+TabAL:AddButton({
 Name = "Red Dot Lock Script",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/reddot1/main/reddot1", true))()
