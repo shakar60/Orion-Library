@@ -61,6 +61,12 @@ Icon = "rbxassetid://4483345998",
 PremiumOnly = false
 })
 
+local TabSC= Window:MakeTab({
+Name = "Showcasers",
+Icon = "rbxassetid://4483345998",
+PremiumOnly = false
+})
+
 local TabPlayer = Window:MakeTab({
 Name = "Player",
 Icon = "rbxassetid://4483345998",
@@ -128,7 +134,7 @@ PremiumOnly = false
 })
 
 ------------------------------------------------------------------
--- Paragraph
+--Paragraph
 
 TabCredits:AddParagraph("Please Credit Me When Showcasing Script Hub And Make An Easy Link To Get The Script")
 TabHome:AddParagraph("TEAM USH","Was Kavo Ui Switched to Orion Libary")
@@ -149,6 +155,21 @@ TabCredits:AddParagraph("Credits To karvine On Discord For Helping Me Make This 
 TabCredits:AddParagraph("Please Credit Me When Showcasing Script Hub And Make An Easy Link To Get The Script","Credits")
 
 ------------------------------------------------------------------
+--Showcasers
+
+TabSC:AddParagraph("This is Showcasers Tab Everyone Who Showcased This Version Or Old Version Will Be In Here","Info")
+TabSC:AddParagraph("Showcased By [Bido Skins]","Showcaser")
+TabSC:AddParagraph("Showcased By [A2br]","Showcaser")
+TabSC:AddParagraph("Showcased By [Masan]","Showcaser")
+TabSC:AddParagraph("Showcased By [Ghacks Script Youtube]","Showcaser")
+TabSC:AddParagraph("Showcased By [HN BLOX]","Showcaser")
+TabSC:AddParagraph("Showcased By [Nastya | Albino Family]","Showcaser")
+TabSC:AddParagraph("Showcased By [ZhenX] [I Dont Trust ZhenX He Makes Hard To Get Script]","Showcaser")
+TabSC:AddParagraph("Showcased By [TEAM 13 OFFICAL]","Showcaser")
+TabSC:AddParagraph("You Showcased The Script But I Didnt Put You There? Join My Discord Server And Tell Me!","Info")
+
+------------------------------------------------------------------
+
 --Sliders And Text Boxes
 
 local TabPlayerSection = TabPlayer:AddSection({
